@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RemahManis — Cookies Renyah Buatan Rumah</title>
+<meta name="description" content="RemahManis: katalog cookies, cari dan saring produk, pesan lewat WhatsApp.">
+<meta name="theme-color" content="#6B3E26">
+<meta property="og:title" content="RemahManis — Cookies Renyah Buatan Rumah">
+<meta property="og:description" content="Pilih cookies klasik, cokelat, hingga hampers, lalu pesan lewat WhatsApp.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&amp;family=Young+Serif&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#konten">Lewati ke konten utama</a>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#atas">
+      <img src="assets/logo.svg" alt="" width="36" height="36">
+      <span>RemahManis</span>
+    </a>
+    <nav aria-label="Navigasi utama">
+      <a href="#produk">Katalog</a>
+      <a href="#cara">Cara Pesan</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+    <a class="btn btn-primary btn-sm wa-head" data-wa href="#kontak">Chat WhatsApp</a>
+  </div>
+</header>
+
+<main id="konten">
+  <section class="hero" id="atas">
+    <div class="wrap">
+      <div class="hero-teks">
+        <h1>Cookies renyah buatan rumah</h1>
+        <p class="lead">Pilih cookies klasik, cokelat, hingga hampers untuk kado, lalu pesan lewat WhatsApp.</p>
+        <div class="aksi">
+          <a class="btn btn-cta" id="cta" href="#produk">Lihat produk</a>
+          <a class="btn btn-secondary" href="#cara">Cara pesan</a>
+        </div>
+        <ul class="fakta">
+          <li><strong id="harga-mulai">Rp 35.000</strong><span>harga mulai dari</span></li>
+          <li><strong>Hampers</strong><span>siap jadi kado</span></li>
+          <li><strong>WhatsApp</strong><span>untuk pesan dan bayar</span></li>
+        </ul>
+      </div>
+      <div class="hero-art">
+        <img src="assets/hero.svg" alt="Sepiring choco chip cookies, butter cookies, dan peanut butter cookies dengan segelas susu" width="600" height="600">
+        <div class="stempel" aria-hidden="true"><span>Buatan<br>rumah</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="scallop" aria-hidden="true"></div>
+
+  <section class="katalog" id="produk" aria-labelledby="produk-judul">
+    <div class="wrap">
+      <h2 class="title" id="produk-judul" tabindex="-1">Produk Kami</h2>
+
+      <div class="field search">
+        <label class="sr" for="q">Cari nama atau deskripsi produk</label>
+        <input id="q" type="search" maxlength="100" placeholder="Cari nama atau deskripsi produk" autocomplete="off">
+      </div>
+
+      <button class="btn btn-secondary toggle" id="toggle" type="button" aria-expanded="false" aria-controls="panel">Filter &amp; Urutkan (0)</button>
+
+      <div class="panel" id="panel">
+        <div class="field">
+          <label for="kat">Kategori</label>
+          <select id="kat">
+            <option value="">Semua kategori</option>
+            <option>Klasik</option>
+            <option>Cokelat</option>
+            <option>Kue &amp; Hampers</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="urut">Urutkan</label>
+          <select id="urut">
+            <option value="unggulan">Unggulan dulu</option>
+            <option value="nama">Nama A–Z</option>
+            <option value="murah">Harga termurah</option>
+            <option value="mahal">Harga termahal</option>
+            <option value="stok">Stok terbanyak</option>
+          </select>
+        </div>
+        <label class="check"><input type="checkbox" id="tersedia"> Hanya yang tersedia</label>
+        <button class="btn btn-secondary" id="reset" type="button">Reset filter</button>
+      </div>
+
+      <p class="count" id="count" role="status" aria-live="polite"></p>
+      <div id="hasil"></div>
+    </div>
+  </section>
+
+  <section class="cara" id="cara" aria-labelledby="cara-judul">
+    <div class="wrap">
+      <h2 class="title" id="cara-judul">Cara memesan</h2>
+      <ol class="langkah">
+        <li>
+          <h3>Pilih produk</h3>
+          <p>Lihat katalog, lalu cari atau saring sesuai selera.</p>
+        </li>
+        <li>
+          <h3>Klik “Pesan via WhatsApp”</h3>
+          <p>Pesan otomatis terisi nama produk dan harganya.</p>
+        </li>
+        <li>
+          <h3>Selesaikan di WhatsApp</h3>
+          <p>Penjual mengonfirmasi stok, jumlah, dan cara pembayaran.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="kontak" id="kontak" aria-labelledby="kontak-judul">
+    <div class="wrap">
+      <div>
+        <h2 id="kontak-judul">Butuh jumlah besar atau hampers kado?</h2>
+        <p>Tanyakan isi, jumlah, dan tanggal kirim langsung lewat WhatsApp.</p>
+      </div>
+      <a class="btn btn-cta" data-wa href="#kontak">Chat WhatsApp</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand brand-foot" href="#atas">
+      <img src="assets/logo.svg" alt="" width="28" height="28">
+      <span>RemahManis</span>
+    </a>
+    <p>Proyek latihan. Seluruh data produk adalah contoh fiktif. Stok tidak berkurang otomatis; pesanan sah setelah dikonfirmasi lewat WhatsApp.</p>
+  </div>
+</footer>
+
+<script src="js/products.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
